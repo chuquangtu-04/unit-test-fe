@@ -16,7 +16,8 @@ export const Counter: React.FC = () => {
       <Button
         content="-"
         /* So sánh giữa 0 và v-1, lấy số lớn hơn, đảm bảo không âm. */
-        onClick={() => setValue((v) => Math.max(0, v - 1))}
+        onClick={() => setValue((v) => v - 1)}
+      // onClick={() => setValue((v) => Math.max(0, v - 1))}
       />
     </div>
   )

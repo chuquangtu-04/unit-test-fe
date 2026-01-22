@@ -11,7 +11,7 @@ describe('Unit Test: validateEmail():', () => {
     ['chuquangtus@gmail.com', true],
     ['chuquangtus@', false],
     ['@chuquangtus.com', false],
-    [{ email: '@chuquangtus.com' }, true],
+    [{ email: '@chuquangtus.com' }, false],
   ]
   it.each(cases)("%p => %p", (email, expected) => {
     expect(validateEmail(email)).toBe(expected)
